@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <title>Result Page</title>
+    </head>
+    <body>
+        <div class="container mt-5" id="results">
+            <div class="card" style="width: 18rem;">
+                <!-- Используем путь к изображению -->
+                <img src="/static/img/image.jpg" class="card-img-top" alt="Map Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ adress }}</h5>
+                    <p>Полный адрес: {{ geocode_data.toponym_address }}</p>
+                    <p>Координаты: {{ geocode_data.toponym_coordinates }}</p>
+                    <p>Страна: {{ geocode_data.country }}</p>
+                    <p>Регион: {{ geocode_data.province }}</p>
+                    <p>Район: {{ geocode_data.area }}</p>
+                    <p>Город: {{ geocode_data.locality }}</p>
+                    <p>Улица: {{ geocode_data.street }}</p>
+                    <p>Дом: {{ geocode_data.house }}</p>
+                </div>
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">Назад</a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+                crossorigin="anonymous"></script>
+    </body>
+</html>
