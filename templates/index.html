@@ -11,6 +11,9 @@
         <title>Main Page</title>
     </head>
     <body>
+        <button id="theme-toggle">
+            <span id="theme-icon">🌞</span> Переключить тему
+        </button>
         <div class="container mt-5">
             <form action="{{ url_for('index') }}" method="post">
                 <div class="input-group mb-3">
@@ -21,5 +24,6 @@
             </form>
             <a href="https://t.me/napitonebot" class="alert alert-info">Открыть Telegram-бота</a>
         </div>
+        <script src="/static/scripts/script.js"></script>
     </body>
 </html>

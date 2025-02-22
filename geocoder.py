@@ -2,8 +2,8 @@ import requests
 import os
 
 def geocode(address):
-    API_KEY_GEOCODE = "WRITE_HERE"
-    API_KEY_STATICMAPS = "WRITE_HERE"
+    API_KEY_GEOCODE = "18825d74-6212-4658-ac68-bda6d2b2c4db"
+    API_KEY_STATICMAPS = "a39d1336-f44f-49cd-8762-5261397e2485"
 
     server_address = 'http://geocode-maps.yandex.ru/1.x/?'
     geocoder_request = f'{server_address}apikey={API_KEY_GEOCODE}&geocode={address}&format=json'
