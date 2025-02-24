@@ -76,3 +76,9 @@ project/
 > Полный адрес: "Россия, Москва, Красная площадь".
 > Координаты: "55.753930, 37.620795".
 > Изображение карты с меткой на Красной площади.
+
+![image](https://github.com/user-attachments/assets/a3073495-1d5f-4b90-8496-50e007512e4a)
+![image](https://github.com/user-attachments/assets/95a28b91-fc78-42f6-b1b9-275eeaca53ff)
+![image](https://github.com/user-attachments/assets/f8e84cda-1459-4dea-bf88-881d6d6b41dc)
+![image](https://github.com/user-attachments/assets/c700e5af-7141-45be-aaca-31179cb1e8a4)
+
