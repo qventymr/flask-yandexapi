@@ -1,0 +1,180 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #007bff;
+    --button-text-color: #ffffff;
+    --button-border: #007bff;
+    --button-hover-background: #0056b3;
+    --button-hover-border: #0056b3;
+    --card-background: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.125);
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --input-background: #ffffff;
+    --input-border: #ced4da;
+    --input-text-color: #495057;
+    --button-active-background: #004080;
+    --button-active-border: #004080;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --button-background: #333333;
+    --button-text-color: #ffffff;
+    --button-border: #555555;
+    --button-hover-background: #444444;
+    --button-hover-border: #666666;
+    --card-background: #1e1e1e;
+    --card-border: #333333;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --input-background: #333333;
+    --input-border: #555555;
+    --input-text-color: #ffffff;
+    --button-active-background: #222222;
+    --button-active-border: #444444;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: 1px solid var(--button-border);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-border);
+}
+
+a {
+    max-width: fit-content;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.input-group {
+    max-width: 500px;
+    margin: auto;
+}
+
+.alert-info {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: 1px solid var(--button-border);
+    transition: transform 0.2s;
+
+}
+
+.alert-info:hover {
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-border);
+    transform: scale(1.05);
+    color: var(--button-text-color);;
+}
+
+.btn-info:active, .btn-info.active {
+    background-color: var(--button-active-background);
+    border-color: var(--button-active-border);
+}
+
+.btn-info:active, .btn-info.active, .btn-info.active-outside {
+    background-color: var(--button-active-background);
+    border-color: var(--button-active-border);
+}
+
+.btn-info {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: auto;
+    display: flex;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: 1px solid var(--button-border);
+    transition: transform 0.2s;
+}
+
+.btn-info:hover {
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-border);
+    transform: scale(1.05);
+}
+
+
+
+.btn-info::before {
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-border);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110dp;
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 8px var(--card-shadow);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.card-img-top {
+    border-bottom: 1px solid var(--card-border);
+}
+
+input, .input-group-text {
+    background-color: var(--input-background);
+    border-color: var(--input-border);
+    color: var(--input-text-color);
+}
